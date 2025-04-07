@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLHS Educator Tracking Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2em; max-width: 800px; margin: auto; }
+    input, select, textarea { display: block; width: 100%; padding: 0.5em; margin: 1em 0; }
+    label { font-weight: bold; }
+    button { padding: 0.7em 2em; font-size: 1em; background: #007bff; color: white; border: none; border-radius: 5px; }
+    img.banner { width: 100%; height: auto; margin-bottom: 2em; }
+  </style>
+</head>
+<body>
+  <img src="banner BLHS.png" alt="Bishop Lavis High School Banner" class="banner">
+
+  <h1>BLHS Educator Attendance & Submission Tracking</h1>
+  <form action="https://formsubmit.co/b.delange@blhs.co.za" method="POST">
+    <label>Name</label>
+    <input type="text" name="Name" required>
+
+    <label>Line Manager</label>
+    <input type="text" name="Line Manager" required>
+
+    <label>Date</label>
+    <input type="date" name="Date" required>
+
+    <label>Week</label>
+    <select name="Week">
+      <option>Week 1</option>
+      <option>Week 2</option>
+      <option>Week 3</option>
+      <option>Week 4</option>
+    </select>
+
+    <label>Arrival Time</label>
+    <input type="time" name="Arrival Time">
+
+    <label>Departure Time</label>
+    <input type="time" name="Departure Time">
+
+    <label>Came Late (Y/N & Time)</label>
+    <input type="text" name="Came Late">
+
+    <label>Left Early (Y/N & Time)</label>
+    <input type="text" name="Left Early">
+
+    <label>Returned (Y/N & Time)</label>
+    <input type="text" name="Returned">
+
+    <label>Absent (Y/N & Reason)</label>
+    <input type="text" name="Absent">
+
+    <label>Morning Briefing Attended (Y/N)</label>
+    <input type="text" name="Morning Briefing">
+
+    <label>Late for Classes (Minutes)</label>
+    <input type="number" name="Late for Classes">
+
+    <label>Staff/SMT/Subject Meeting Attendance (Y/N)</label>
+    <input type="text" name="Meeting Attendance">
+
+    <label>Lesson Plans Submitted (Y/N & Date)</label>
+    <input type="text" name="Lesson Plans">
+
+    <label>Late Submissions 1</label>
+    <input type="text" name="Late Submission 1">
+
+    <label>Late Submissions 2</label>
+    <input type="text" name="Late Submission 2">
+
+    <label>Learners Put Out of Class (Y/N & Why)</label>
+    <textarea name="Learners Out"></textarea>
+
+    <label>Total Days Late</label>
+    <input type="number" name="Total Days Late">
+
+    <label>Total Days Absent</label>
+    <input type="number" name="Total Days Absent">
+
+    <label>Notes</label>
+    <textarea name="Notes"></textarea>
+
+    <label>Principal/Line Manager Comments</label>
+    <textarea name="Manager Comments"></textarea>
+
+    <label>Date</label>
+    <input type="date" name="Final Date">
+
+    <label>Signature</label>
+    <input type="text" name="Signature">
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
